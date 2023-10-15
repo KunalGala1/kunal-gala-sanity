@@ -1,6 +1,12 @@
 import Link from 'next/link';
 
-const NavListItem = ({ href, toggleNav, children }) => {
+type NavListItemProps = {
+  href: string;
+  toggleNav: () => void;
+  children: React.ReactNode;
+};
+
+const NavListItem = ({ href, toggleNav, children }: NavListItemProps) => {
   return (
     <li>
       <Link

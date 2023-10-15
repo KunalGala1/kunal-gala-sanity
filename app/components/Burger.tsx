@@ -1,7 +1,12 @@
 'use client';
 import React, { useState } from 'react';
 
-const Burger = ({ isOpen, toggleNav }) => {
+type BurgerProps = {
+  isOpen: boolean;
+  toggleNav: () => void;
+};
+
+const Burger = ({ isOpen, toggleNav }: BurgerProps) => {
   return (
     <div
       id='burger'

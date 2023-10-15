@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import NavListItem from './NavListItem';
 
-const Nav = ({ isOpen, toggleNav }) => {
+type NavProps = {
+  isOpen: boolean;
+  toggleNav: () => void;
+};
+
+const Nav = ({ isOpen, toggleNav }: NavProps) => {
   return (
     <nav
       className={`${
