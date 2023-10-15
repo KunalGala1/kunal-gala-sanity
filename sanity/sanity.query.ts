@@ -7,9 +7,20 @@ export const getProfile = async () => {
             _id,
             name,
             headline,
-            profileImage {alt, "image": asset->url},
+            image {alt, "image": asset->url},
             shortBio,
             fullBio
         }`
+  );
+};
+
+export const getRecordings = async () => {
+  return client.fetch(
+    groq`*[_type == 'recording']{
+      _id,
+      title,
+      subtitle,
+      soundcloudId
+    }`
   );
 };

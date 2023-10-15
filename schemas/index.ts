@@ -1,2 +1,3 @@
 import profile from './profile';
-export const schemaTypes = [profile];
+import recording from './recording';
+export const schemaTypes = [profile, recording];
