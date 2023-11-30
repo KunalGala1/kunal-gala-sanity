@@ -31,7 +31,10 @@ const MusicPage = () => {
 
       {recordings &&
         recordings.map((recording) => (
-          <div key={recording._id} className='p-8 bg-slate-100/10 rounded'>
+          <div
+            key={recording._id}
+            className='p-8 bg-slate-100/10 rounded flex-1 min-w-[25%] max-w-full'
+          >
             <div className='py-4'>
               <h2 className='font-bold text-xl capitalize'>
                 {recording.title}

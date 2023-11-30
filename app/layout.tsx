@@ -1,14 +1,13 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Playfair_Display } from 'next/font/google';
+import { Sorts_Mill_Goudy } from 'next/font/google';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 
-const font = Playfair_Display({
+const font = Sorts_Mill_Goudy({
+  weight: '400',
   subsets: ['latin'],
-  variable: '--font-playfair-display',
-  weight: ['400', '700'],
 });
 
 export const metadata: Metadata = {
@@ -24,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={font.className + ' bg-gray-950 text-gray-200'}>
+      <body className={font.className + '  bg-gray-950 text-gray-200'}>
         {children}
       </body>
     </html>

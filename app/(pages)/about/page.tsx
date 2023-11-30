@@ -31,7 +31,7 @@ const AboutPage = () => {
         <div className='w-full lg:w-2/3 h-[500px] rounded bg-slate-50/5'></div>
       )}
       {profile && (
-        <div className='lg:w-2/3'>
+        <div className='lg:w-1/2'>
           <Image
             src={profile.image.image}
             alt={profile.image.alt}
@@ -47,7 +47,7 @@ const AboutPage = () => {
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {profile && (
-        <div className='space-y-4'>
+        <div className='space-y-4 lg:w-1/2 leading-loose'>
           <PortableText value={profile.fullBio} />
         </div>
       )}

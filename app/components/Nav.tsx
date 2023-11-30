@@ -23,6 +23,9 @@ const Nav = ({ isOpen, toggleNav }: NavProps) => {
         <NavListItem href={'/music'} toggleNav={toggleNav}>
           music
         </NavListItem>
+        <NavListItem href={'/video'} toggleNav={toggleNav}>
+          video
+        </NavListItem>
       </ul>
     </nav>
   );

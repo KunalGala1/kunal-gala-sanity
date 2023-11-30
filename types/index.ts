@@ -18,3 +18,10 @@ export type RecordingType = {
   subtitle: string;
   soundcloudId: string;
 };
+
+export type VideoType = {
+  _id: string;
+  title: string;
+  subtitle: string;
+  youtubeId: string;
+};
